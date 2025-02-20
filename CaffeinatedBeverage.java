@@ -36,10 +36,12 @@ public class CaffeinatedBeverage
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || this.getClass() != o.getClass()) return false;
+        if (o == null || this.getClass() != o.getClass())
+            return false;
         CaffeinatedBeverage that = (CaffeinatedBeverage) o;
         return this.ounces == that.ounces &&
                 Double.compare(this.price, that.price) == 0 &&
-               this.name.equals(that.name);
+                this.name.equals(that.name);
     }
+    
 }
